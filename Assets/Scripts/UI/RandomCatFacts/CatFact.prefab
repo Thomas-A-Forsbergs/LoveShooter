@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2970398598140311432}
   - component: {fileID: 2970398598140311433}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Cat fact
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31,7 +31,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2970398599225202865}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -93,8 +93,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   facts:
-  - Cats cannot taste sweetness... They need love instead!
-  - Don't move, They can sense movement...
+  - Cat's cannot taste sweetness... They need love instead!
+  - Don't move! They can sense movement...
   - Kittens have 26 baby teeth.
   - You can't catch up to cats, try to hug them when they least expect it...
   - Floof
@@ -103,9 +103,9 @@ MonoBehaviour:
   - The worlds richest cat is richer than you :3
   - Silly human doesn't know how to sleep...
   - 'Peace was never an option... '
-  - Caggette, Cabun, Catic bread, Always a bun
-  - 'Cats can recognize your voice. So yes, they are just ignoring you. '
-  - I'm smarter than a dog (when i feel like it)
+  - Caggette, Cabun, Catic bread. Always a bun
+  - 'Cat''s can recognize your voice. So yes, they are just ignoring you. '
+  - I'm smarter than a dog (when I feel like it)
   - We own a train station, soon we will own the world.
   - Silly human doesn't know how to hunt.
   text: {fileID: 2970398598140311432}
@@ -138,8 +138,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 2970398598140311478}
   - {fileID: 2970398599487156711}
+  - {fileID: 2970398598140311478}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -198,7 +198,7 @@ GameObject:
   - component: {fileID: 2970398599487156729}
   - component: {fileID: 2970398599487156710}
   m_Layer: 5
-  m_Name: Text (1)
+  m_Name: Cat fact title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -216,7 +216,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2970398599225202865}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
