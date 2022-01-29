@@ -123,7 +123,8 @@ public class CatAI : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        //Draws a 1 meter line forwards
-        Gizmos.DrawLine(transform.position, new Vector2(transform.position.x, transform.position.y) + DirectionToPlayer.normalized);
+        //Draws a 1 meter line towards the player
+        if (player != null)
+            Gizmos.DrawLine(transform.position, new Vector2(transform.position.x, transform.position.y) + DirectionToPlayer.normalized);
     }
 }
