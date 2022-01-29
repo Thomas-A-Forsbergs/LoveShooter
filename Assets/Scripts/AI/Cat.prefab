@@ -191,6 +191,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weakness: 0
+  triggerCollider: {fileID: 5712183820119410358}
 --- !u!114 &1201302437
 MonoBehaviour:
   m_ObjectHideFlags: 0

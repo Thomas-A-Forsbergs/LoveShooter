@@ -37,7 +37,10 @@ public class CatAIWPathfinding : MonoBehaviour
 
     void MoveTowardsPlayer()
     {
-        navMeshAgent.destination = target.transform.position;
+        if (target != null)
+            navMeshAgent.destination = target.transform.position;
+        else
+            enabled = false;
     }
 
     private void OnDrawGizmos()
