@@ -3,7 +3,9 @@
  */
 
 using UnityEngine;
+using Ludiq;
 
+[IncludeInSettings(true)]
 public class PlayerStats : MonoBehaviour
 {
     public delegate void OnHealthChangedDelegate();
