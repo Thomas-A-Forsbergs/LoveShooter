@@ -15,20 +15,14 @@ public class CatAI : MonoBehaviour
         pathfinding.target = player;
     }
 
-    public void OnHit(DamageType damageType)
+    public void Hit(DamageType damageType)
     {
         if(damageType == weakness)
-        OnRepelled();
+        OnHit();
     }
 
-    public void OnRepelled()
+    public void OnHit()
     {
         Destroy(gameObject);
-    }
-
-    public enum DamageType
-    {
-        Love,
-        Water
     }
 }

@@ -200,6 +200,7 @@ GameObject:
   - component: {fileID: 138168409}
   - component: {fileID: 138168408}
   - component: {fileID: 138168407}
+  - component: {fileID: 138168410}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -288,6 +289,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &138168410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138168406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2274d1e6d3f240add43ca1264cac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7248104003724816550, guid: f53a566a7af77b042af5e8d7ad09038f, type: 3}
 --- !u!1 &375558063
 GameObject:
   m_ObjectHideFlags: 0
@@ -1209,6 +1223,14 @@ PrefabInstance:
     - target: {fileID: 3463861330601722350, guid: 5b4550a629abed64fba260eed1b12bfb, type: 3}
       propertyPath: m_Name
       value: Floor
+      objectReference: {fileID: 0}
+    - target: {fileID: 3463861330601722350, guid: 5b4550a629abed64fba260eed1b12bfb, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3463861330601722350, guid: 5b4550a629abed64fba260eed1b12bfb, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b4550a629abed64fba260eed1b12bfb, type: 3}
