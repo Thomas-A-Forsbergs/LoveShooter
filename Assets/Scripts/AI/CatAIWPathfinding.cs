@@ -16,6 +16,7 @@ public class CatAIWPathfinding : MonoBehaviour
         navMeshAgent = GetComponent<NavMeshAgent>();
         navMeshAgent.updateRotation = false;
         navMeshAgent.updateUpAxis = false;
+        navMeshAgent.speed = Random.Range(1.4f, 3f);
     }
 
     // Update is called once per frame

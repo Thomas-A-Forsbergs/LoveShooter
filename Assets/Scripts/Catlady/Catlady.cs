@@ -8,9 +8,10 @@ public class Catlady : MonoBehaviour
     [SerializeField] Vector2 backyardSize;
     float timeSinceLastTea;
     [SerializeField] float timeSpentOnTea = 0.2f;
+    [SerializeField] float timeBeforePickingUpAnotherCat = 4;
 
     [SerializeField] int KittensHunting => CatAI.activeCats;
-    [SerializeField] int MaxKittensHunting => ((int)Time.timeSinceLevelLoad / 4) + 10;
+    [SerializeField] int MaxKittensHunting => (int)(Time.timeSinceLevelLoad / timeBeforePickingUpAnotherCat) + 3;
 
     void Update()
     {
@@ -29,6 +30,7 @@ public class Catlady : MonoBehaviour
 
     void ThrowKittyCatAtPlayer()
     {
+        timeSinceLastTea = Time.time;
         var kitten = CareForKitten();
         kitten.transform.position = FindHoleInFence();
     }
@@ -69,6 +71,9 @@ public class Catlady : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        //Gizmos.DrawLine(new Vector2(-backyardSize.y / 2, backyardSize.y / 2))
+        Gizmos.DrawLine(new Vector2(-backyardSize.x / 2, backyardSize.y / 2), new Vector2(backyardSize.x / 2, backyardSize.y / 2));
+        Gizmos.DrawLine(new Vector2(backyardSize.x / 2, backyardSize.y / 2), new Vector2(backyardSize.x / 2, -backyardSize.y / 2));
+        Gizmos.DrawLine(new Vector2(backyardSize.x / 2, -backyardSize.y / 2), new Vector2(-backyardSize.x / 2, -backyardSize.y / 2));
+        Gizmos.DrawLine(new Vector2(-backyardSize.x / 2, -backyardSize.y / 2), new Vector2(-backyardSize.x / 2, backyardSize.y / 2));
     }
 }
