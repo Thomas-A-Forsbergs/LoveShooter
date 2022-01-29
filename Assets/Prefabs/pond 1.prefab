@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7705235300693057219}
   - component: {fileID: 7705235300693057220}
   - component: {fileID: 2002122010591668009}
+  - component: {fileID: 4166359295811219657}
   m_Layer: 0
   m_Name: pond 1
   m_TagString: Untagged
@@ -99,3 +100,19 @@ CapsuleCollider2D:
   m_Offset: {x: 0.27000028, y: 0.16386835}
   m_Size: {x: 11.440001, y: 7.627739}
   m_Direction: 1
+--- !u!114 &4166359295811219657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7705235300693057222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
