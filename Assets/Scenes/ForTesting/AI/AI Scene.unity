@@ -1040,9 +1040,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4325671061976602088, guid: c43c3ca90558d4041be861297ffeb48a, type: 3}
-      propertyPath: m_Interpolate
-      value: 1
+    - target: {fileID: 1201302437, guid: c43c3ca90558d4041be861297ffeb48a, type: 3}
+      propertyPath: timePerSprite
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 4325671061976602091, guid: c43c3ca90558d4041be861297ffeb48a, type: 3}
       propertyPath: m_RootOrder
