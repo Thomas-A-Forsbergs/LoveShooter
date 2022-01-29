@@ -32,7 +32,10 @@ public class CatAI : MonoBehaviour
     {
         enabled = false;
         GetComponent<SimplestAnimatorPossible>().enabled = false;
-        GetComponent<Collider2D>().enabled = false;
+        foreach (var collider in GetComponents<Collider2D>())
+        {
+            collider.enabled = false;
+        } 
         GetComponent<UnityEngine.AI.NavMeshAgent>().enabled = false;
         var almostSimplestAnimator = GetComponent<AlmostSimplestAnimator>();
         almostSimplestAnimator.enabled = true;

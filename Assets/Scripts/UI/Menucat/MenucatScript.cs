@@ -63,29 +63,7 @@ public class MenucatScript : MonoBehaviour
     Vector3 GetEdgePoint()
     {
         var newVector = GetRandomPoint();
-        if(Mathf.Abs(newVector.x) > Mathf.Abs(newVector.y))
-        {
-            if(newVector.x < 0)
-            {
-                newVector.x = -Camera.main.orthographicSize * Screen.width / Screen.height;
-            }
-            else
-            {
-                newVector.x = Camera.main.orthographicSize * Screen.width / Screen.height;
-            }
-        }
-        else
-        {
-            if (newVector.y < 0)
-            {
-                newVector.y = -Camera.main.orthographicSize;
-            }
-            else
-            {
-                newVector.y = Camera.main.orthographicSize;
-            }
-        }
-        return newVector;
+        if (Mathf.Abs(newVector.x) > Mathf.Abs(newVector.y)) { if (newVector.x < 0) { newVector.x = -Camera.main.orthographicSize * Screen.width / Screen.height; } else { newVector.x = Camera.main.orthographicSize * Screen.width / Screen.height; } } else { if (newVector.y < 0) { newVector.y = -Camera.main.orthographicSize; } else { newVector.y = Camera.main.orthographicSize; } }return newVector;
     }
 
     Vector3 ConvertToOuterPoint(Vector3 innerPoint)

@@ -45,26 +45,7 @@ public class HealthBarController : MonoBehaviour
         }
     }
 
-    void SetFilledHearts()
-    {
-        for (int i = 0; i < heartFills.Length; i++)
-        {
-            if (i < PlayerStats.Instance.Health)
-            {
-                heartFills[i].fillAmount = 1;
-            }
-            else
-            {
-                heartFills[i].fillAmount = 0;
-            }
-        }
-
-        if (PlayerStats.Instance.Health % 1 != 0)
-        {
-            int lastPos = Mathf.FloorToInt(PlayerStats.Instance.Health);
-            heartFills[lastPos].fillAmount = PlayerStats.Instance.Health % 1;
-        }
-    }
+    void SetFilledHearts(){for (int i = 0; i < heartFills.Length; i++){if (i < PlayerStats.Instance.Health){heartFills[i].fillAmount = 1;}else{heartFills[i].fillAmount = 0;}}if (PlayerStats.Instance.Health % 1 != 0){int lastPos = Mathf.FloorToInt(PlayerStats.Instance.Health);heartFills[lastPos].fillAmount = PlayerStats.Instance.Health % 1;}}
 
     void InstantiateHeartContainers()
     {

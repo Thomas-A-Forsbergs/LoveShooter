@@ -6,7 +6,7 @@ public class AlmostSimplestAnimator : MonoBehaviour
 {
     public SpriteRenderer spriteRenderer;
     public Sprite[] sprites;
-    float timePerFrame = 0.3f;
+    [SerializeField] float timePerFrame = 0.3f;
     float timeStarted;
 
     public UnityEngine.Events.UnityEvent onCompleted;
