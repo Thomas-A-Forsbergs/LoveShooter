@@ -169,3 +169,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 7248104003724816550, guid: f53a566a7af77b042af5e8d7ad09038f, type: 3}
   damageType: 0
+  rpm: 1
+  currentAim: {x: 0, y: 1}

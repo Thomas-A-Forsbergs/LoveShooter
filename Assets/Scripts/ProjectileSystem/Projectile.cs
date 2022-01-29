@@ -12,7 +12,16 @@ public class Projectile : MonoBehaviour
     public void Setup(Vector2 moveDirection, DamageType damageType)
     {
         rigidbody.velocity = moveDirection * velocity;
+        AimForwards(moveDirection);
         this.damageType = damageType;
+    }
+
+    void AimForwards(Vector2 direction)
+    {
+        var diff = direction; ;
+        diff.Normalize();
+        float rot_z = Mathf.Atan2(diff.y, diff.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.Euler(0f, 0f, rot_z - 90);
     }
 
     private void Awake()
