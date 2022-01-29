@@ -12,7 +12,7 @@ public class MenucatScript : MonoBehaviour
 
     Vector3 innerPoint, outerPoint;
 
-    float activeTime = 2;
+    float activeTime = 4;
 
     private void Awake()
     {
@@ -49,7 +49,7 @@ public class MenucatScript : MonoBehaviour
         innerPoint = GetEdgePoint();
         outerPoint = ConvertToOuterPoint(innerPoint);
         LookAtCenter();
-
+        activeTime = Random.Range(3, 6);
         //transform.up = innerPoint - transform.position;
     }
 
