@@ -24,10 +24,6 @@ public class MenucatScript : MonoBehaviour
     private void Start()
     {
         return;
-        for (int i = 0; i < 50; i++)
-        {
-            InstantiateTestCase();
-        }
     }
 
     void InstantiateTestCase()

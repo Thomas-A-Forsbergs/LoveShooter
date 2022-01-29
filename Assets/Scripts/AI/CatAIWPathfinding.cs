@@ -6,12 +6,12 @@ using UnityEngine.AI;
 public class CatAIWPathfinding : MonoBehaviour
 {
     NavMeshAgent navMeshAgent;
-    static GameObject player;
+    public GameObject target;
 
     // Start is called before the first frame update
     void Awake()
     {
-        if (player == null) player = GameObject.FindGameObjectWithTag("Player");
+        if (target == null) target = GameObject.FindGameObjectWithTag("Player");
 
         navMeshAgent = GetComponent<NavMeshAgent>();
         navMeshAgent.updateRotation = false;
@@ -36,7 +36,7 @@ public class CatAIWPathfinding : MonoBehaviour
 
     void MoveTowardsPlayer()
     {
-        navMeshAgent.destination = player.transform.position;
+        navMeshAgent.destination = target.transform.position;
     }
 
     private void OnDrawGizmos()
