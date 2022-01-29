@@ -11,14 +11,16 @@ GameObject:
   - component: {fileID: 4325671061976602091}
   - component: {fileID: 4325671061976602092}
   - component: {fileID: 4325671061976602090}
+  - component: {fileID: 5712183820119410358}
   - component: {fileID: 4325671061976602088}
   - component: {fileID: 4325671061976602089}
   - component: {fileID: 4325671061976602087}
   - component: {fileID: -1065925274084731231}
   - component: {fileID: 1201302437}
+  - component: {fileID: 4110846406199737771}
   m_Layer: 0
   m_Name: Cat
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -104,6 +106,22 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.6
+--- !u!58 &5712183820119410358
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4325671061976602093}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.76
 --- !u!50 &4325671061976602088
 Rigidbody2D:
   serializedVersion: 4
@@ -173,6 +191,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weakness: 0
+  triggerCollider: {fileID: 5712183820119410358}
 --- !u!114 &1201302437
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -189,3 +208,27 @@ MonoBehaviour:
   sprite2: {fileID: 21300000, guid: b6db013da5abadf4f99d32243479a250, type: 3}
   spriteRenderer: {fileID: 4325671061976602092}
   timePerSprite: 0.1
+--- !u!114 &4110846406199737771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4325671061976602093}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e723dc65b986274a835cf9091d47a5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 4325671061976602092}
+  sprites:
+  - {fileID: 21300000, guid: 39df8a1dc5a34ed45939a6f11e6a41c7, type: 3}
+  - {fileID: 21300000, guid: da62daf158679f148ac707f6d30b75af, type: 3}
+  - {fileID: 21300000, guid: 37a0e8ddeb3b9e54b9a2495dac1b8a51, type: 3}
+  - {fileID: 21300000, guid: 025fd4fee6cb81046972c2689f382241, type: 3}
+  - {fileID: 21300000, guid: 5fab82c6c36b6d149b2cdb0ae749c8c1, type: 3}
+  - {fileID: 21300000, guid: cb264ac44860d4140a9ca7f96e7b5aa6, type: 3}
+  - {fileID: 21300000, guid: ac50ccc2053fd7c438213cc0880e89a0, type: 3}
+  onCompleted:
+    m_PersistentCalls:
+      m_Calls: []

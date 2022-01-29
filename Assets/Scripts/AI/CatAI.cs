@@ -30,6 +30,12 @@ public class CatAI : MonoBehaviour
 
     public void OnHit()
     {
-        Destroy(gameObject);
+        enabled = false;
+        GetComponent<SimplestAnimatorPossible>().enabled = false;
+        GetComponent<Collider2D>().enabled = false;
+        GetComponent<UnityEngine.AI.NavMeshAgent>().enabled = false;
+        var almostSimplestAnimator = GetComponent<AlmostSimplestAnimator>();
+        almostSimplestAnimator.enabled = true;
+        almostSimplestAnimator.onCompleted.AddListener(delegate { Destroy(gameObject); });
     }
 }
