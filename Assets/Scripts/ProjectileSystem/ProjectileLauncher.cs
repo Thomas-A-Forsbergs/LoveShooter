@@ -39,6 +39,7 @@ public class ProjectileLauncher : MonoBehaviour
         {
             var projectile = Instantiate(projectilePrefab, transform.position, transform.rotation);
             projectile.Setup(transform.up, damageType);
+            lastLaunch = Time.time;
         }
     }
     private void FixedUpdate()

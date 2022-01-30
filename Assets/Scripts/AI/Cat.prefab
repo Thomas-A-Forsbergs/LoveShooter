@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: -1065925274084731231}
   - component: {fileID: 1201302437}
   - component: {fileID: 4110846406199737771}
+  - component: {fileID: 8837451781585369830}
   m_Layer: 0
   m_Name: Cat
   m_TagString: Monster
@@ -191,7 +192,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weakness: 0
-  triggerCollider: {fileID: 5712183820119410358}
 --- !u!114 &1201302437
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -229,6 +229,20 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 5fab82c6c36b6d149b2cdb0ae749c8c1, type: 3}
   - {fileID: 21300000, guid: cb264ac44860d4140a9ca7f96e7b5aa6, type: 3}
   - {fileID: 21300000, guid: ac50ccc2053fd7c438213cc0880e89a0, type: 3}
+  timePerFrame: 0.3
   onCompleted:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &8837451781585369830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4325671061976602093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6169d92fd2ed8bc47b24fc144583b96c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particleSystem: {fileID: 2060087511706541682, guid: 09ed608561393af4eb9c964655576ac5, type: 3}
