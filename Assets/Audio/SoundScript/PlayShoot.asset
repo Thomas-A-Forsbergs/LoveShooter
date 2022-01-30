@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1893448595, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
+  m_Name: PlayShoot
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":"Shoot","summary":null,"pan":{"x":181.9582,"y":119.0074},"zoom":0.8,"elements":[{"argumentCount":0,"defaultValues":{"name":{"$content":"PlayShoot","$type":"System.String"},"target":null},"position":{"x":108.0,"y":-35.0},"guid":"ddcdaf73-e567-4873-b86a-112e8a103a22","$version":"A","$type":"Bolt.TriggerCustomEvent"},{"specifyFallback":false,"kind":"Scene","defaultValues":{"name":{"$content":"SFXManager","$type":"System.String"}},"position":{"x":-155.0,"y":101.0},"guid":"c7322fc4-354f-40e6-a7a2-64213ff7b693","$version":"A","$type":"Bolt.GetVariable"},{"coroutine":false,"defaultValues":{"key":{"$content":"Space","$type":"UnityEngine.KeyCode"},"action":{"$content":"Down","$type":"Ludiq.PressState"}},"position":{"x":-163.0,"y":-34.0},"guid":"e1eebb4b-da24-4127-b9e7-a519f1d392a7","$version":"A","$type":"Bolt.OnKeyboardInput"},{"chainable":false,"member":{"name":"PlayOneShot","parameterTypes":["UnityEngine.AudioClip"],"targetType":"UnityEngine.AudioSource","targetTypeName":"UnityEngine.AudioSource","$version":"A"},"defaultValues":{"target":null,"%clip":null},"position":{"x":376.0,"y":-18.0},"guid":"e34c7534-0fc5-469c-ae20-636068e86e1a","$version":"A","$type":"Bolt.InvokeMember","$id":"15"},{"type":"UnityEngine.AudioClip","value":{"$content":0,"$type":"UnityEngine.Object"},"defaultValues":{},"position":{"x":80.0,"y":160.0},"guid":"c8378bac-bb4f-4129-a569-f47111b3db61","$version":"A","$type":"Bolt.Literal","$id":"18"},{"sourceUnit":{"$ref":"18"},"sourceKey":"output","destinationUnit":{"$ref":"15"},"destinationKey":"%clip","guid":"6f6bc3ef-02e3-49a2-a46b-5b015a9ba502","$type":"Bolt.ValueConnection"}],"$version":"A"}}'
+    _objectReferences:
+    - {fileID: 8300000, guid: 7924a0d66b8974145a3a59ffa6a583e1, type: 3}
