@@ -191,6 +191,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weakness: 0
+  LoveParticles: {fileID: 2417663197644812437, guid: 68dc5c278a781814e80f35418d66ae90, type: 3}
 --- !u!114 &1201302437
 MonoBehaviour:
   m_ObjectHideFlags: 0
