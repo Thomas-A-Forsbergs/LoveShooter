@@ -35,7 +35,7 @@ public class Projectile : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //If hitting the person who spawned it, ignore...
-        if (collision.tag == "Player" || collision.gameObject.layer == LayerMask.NameToLayer("Ignore Raycast")) return;
+        if (collision.tag == "Player" || collision.gameObject.layer == LayerMask.NameToLayer("Ignore Raycast") || collision.isTrigger) return;
 
         //If hitting a cat, call cat.hit
         var catAI = collision.gameObject.GetComponent<CatAI>();
