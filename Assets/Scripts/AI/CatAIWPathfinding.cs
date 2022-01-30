@@ -37,7 +37,7 @@ public class CatAIWPathfinding : MonoBehaviour
 
     void MoveTowardsPlayer()
     {
-        if (target != null)
+        if (target != null && navMeshAgent.enabled == true)
             navMeshAgent.destination = target.transform.position;
         else
             enabled = false;

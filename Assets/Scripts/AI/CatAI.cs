@@ -38,7 +38,7 @@ public class CatAI : MonoBehaviour
         {
             Instantiate (Hearts, transform.position, Quaternion.identity);
             collider.enabled = false;
-        } 
+        }
         GetComponent<UnityEngine.AI.NavMeshAgent>().enabled = false;
         var almostSimplestAnimator = GetComponent<AlmostSimplestAnimator>();
         almostSimplestAnimator.enabled = true;
