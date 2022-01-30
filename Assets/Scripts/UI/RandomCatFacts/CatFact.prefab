@@ -94,7 +94,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   facts:
   - Cat's cannot taste sweetness... They need love instead!
-  - Don't move! They can sense movement...
+  - Don't move! They can sense you...
   - Kittens have 26 baby teeth.
   - You can't catch up to cats, try to hug them when they least expect it...
   - Floof
@@ -108,6 +108,8 @@ MonoBehaviour:
   - I'm smarter than a dog (when I feel like it)
   - We own a train station, soon we will own the world.
   - Silly human doesn't know how to hunt.
+  - Dog afraid of soap.
+  - We need to ban watersplashing.
   text: {fileID: 2970398598140311432}
 --- !u!1 &2970398599225202878
 GameObject:
