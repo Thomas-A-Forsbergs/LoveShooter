@@ -42,9 +42,8 @@ public class Projectile : MonoBehaviour
         if (catAI != null)
         {
             catAI.Hit(damageType);
+            PlayerStats.Instance.AddScore(1);
         }
-
-        PlayerStats.Instance.AddScore(1);
 
         //Destroy projectile
         Destroy(gameObject);
