@@ -38,7 +38,7 @@ public class ProjectileLauncher : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && Time.time - lastLaunch > 1/rpm)
         {
             var projectile = Instantiate(projectilePrefab, transform.position, transform.rotation);
-            projectile.Setup(CurrentAim, damageType);
+            projectile.Setup(transform.up, damageType);
         }
     }
     private void FixedUpdate()
