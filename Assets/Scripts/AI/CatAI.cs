@@ -7,6 +7,7 @@ public class CatAI : MonoBehaviour
     CatAIWPathfinding pathfinding;
     static GameObject player;
     public DamageType weakness;
+    public GameObject LoveParticles;
     public static int activeCats = 0;
 
     private void Awake()
@@ -34,6 +35,7 @@ public class CatAI : MonoBehaviour
         GetComponent<SimplestAnimatorPossible>().enabled = false;
         foreach (var collider in GetComponents<Collider2D>())
         {
+            Instantiate (LoveParticles, transform.position, Quaternion.identity);
             collider.enabled = false;
         }
         GetComponent<UnityEngine.AI.NavMeshAgent>().enabled = false;
