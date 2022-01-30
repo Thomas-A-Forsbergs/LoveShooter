@@ -13,6 +13,7 @@ public class RatScript : MonoBehaviour
         {
             item.enabled = false;
         }
+        GetComponent<ProjectileLauncher>().enabled = false;
         GetComponent<RoTaTeToWaRdSvElOcItY>().enabled = false;
         RaTgOeSrOtAtE();
         GetComponent<AlmostSimplestAnimator>().onCompleted.AddListener(delegate { Destroy(gameObject); });
