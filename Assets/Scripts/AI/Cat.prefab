@@ -191,7 +191,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weakness: 0
-  triggerCollider: {fileID: 5712183820119410358}
+  Hearts: {fileID: 2417663197644812437, guid: 68dc5c278a781814e80f35418d66ae90, type: 3}
 --- !u!114 &1201302437
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -229,6 +229,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 5fab82c6c36b6d149b2cdb0ae749c8c1, type: 3}
   - {fileID: 21300000, guid: cb264ac44860d4140a9ca7f96e7b5aa6, type: 3}
   - {fileID: 21300000, guid: ac50ccc2053fd7c438213cc0880e89a0, type: 3}
+  timePerFrame: 0.3
   onCompleted:
     m_PersistentCalls:
       m_Calls: []
