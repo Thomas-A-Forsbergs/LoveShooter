@@ -11,15 +11,15 @@ Download here! https://ggj.s3.amazonaws.com/games/2022/01/326649/exec/HM5xQ/PurP
 Credits:
 
 Team:
-Felix Dauber - Programmer
-Kati Ren - Game Artist, Animator  
-Konan Murad - Level Designer
-Roberto Paredes - Programmer
-Svante Westin Gustafsson - Sound Designer
-Teo Zimmer - Composer
-Thomas Ahlström - Programmer, designer
+- Felix Dauber - Programmer
+- Kati Ren - Game Artist, Animator  
+- Konan Murad - Level Designer
+- Roberto Paredes - Programmer
+- Svante Westin Gustafsson - Sound Designer
+- Teo Zimmer - Composer
+- Thomas Ahlström - Programmer, designer
 
 Third party:
-Cyber Boss Games - 2D camera
-Ariel Oliveira - HealthHeartSystem
-Ludiq - Bolt
+- Cyber Boss Games - 2D camera
+- Ariel Oliveira - HealthHeartSystem
+- Ludiq - Bolt
